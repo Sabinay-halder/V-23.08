@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listShowImageView"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/drugShowImageViewTrans"
+
+
+        />
+</RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="6">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:layout_weight="3.5" >
+
+            <com.widevision.pillreminder.model.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listDrugNameTextView"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/black"
+            android:text="Medicine Name :"/>
+</LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:paddingTop="5dp"
+                android:gravity="center"
+                >
+
+                <com.widevision.pillreminder.model.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity :"
+                    android:id="@+id/takendate"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_small"
+                    android:singleLine="true"
+                    />
+            </LinearLayout>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:id="@+id/food_inst_layout"
+    android:paddingLeft="5dp"
+    android:visibility="gone">
+    <com.widevision.pillreminder.model.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantity :"
+        android:id="@+id/food_inst"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_small"
+        android:singleLine="true"
+        />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:padding="5dp">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontalscroll"
+                android:scrollbars="none"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearaa"
+                    android:orientation="horizontal"
+                    />
+            </HorizontalScrollView>
+        </LinearLayout>
+</LinearLayout>
+</LinearLayout>

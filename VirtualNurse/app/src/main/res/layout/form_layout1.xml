@@ -1,0 +1,48 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+    <ImageView
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_gravity="right"
+        android:background="@drawable/close_picker"
+        />
+    <com.widevision.pillreminder.model.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/center_text"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/cityWheel"
+        android:textSize="@dimen/text_size_small"
+        android:text=""
+
+        />
+    <ImageView
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/done_picker"
+        />
+
+    <com.widevision.pillreminder.widget.WheelView
+        android:id="@+id/cityWheel"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/doneButton"
+        android:background="@color/white"
+        />
+</RelativeLayout>
+
+
+

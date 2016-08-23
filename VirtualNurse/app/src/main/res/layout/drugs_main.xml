@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:padding="15dp"
+        android:id="@+id/relative1"
+        android:background="@color/drugs_color"
+        android:gravity="center_vertical">
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleRoundedCorners="15dp"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_drug"
+                android:background="@drawable/edit"
+                />
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <com.widevision.pillreminder.model.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drug Reminders"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:paddingTop="5dp"
+            android:id="@+id/reminder_text" />
+        <com.widevision.pillreminder.model.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/reminder_text"
+            android:text=""
+            android:layout_marginTop="5dp"
+            android:background="@drawable/alert"
+            android:layout_marginLeft="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/pendingNotification"
+            />
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleRoundedCorners="15dp"
+            android:layout_marginRight="10dp"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_drugs"
+                android:background="@drawable/add"
+                android:layout_alignParentRight="true" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:id="@+id/linearmid"
+        android:visibility="invisible"
+     >
+
+        <com.widevision.pillreminder.model.CustomTextViewBold
+            android:id="@+id/noDrugsItemsList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="13dp"
+            style="?android:attr/textAppearanceLarge"
+            android:text="Please add Drug Reminder by clicking"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleRoundedCorners="50dp"
+            android:layout_gravity="center_horizontal"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/add_drug_new"
+            android:padding="10dp">
+        <ImageView
+            android:id="@+id/noDrugsItemsListImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:visibility="invisible"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+        <ListView
+            android:id="@+id/drugs_lists"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/black"
+            android:dividerHeight=".5dp"
+            android:fadingEdge="none"
+            android:choiceMode="singleChoice"
+            android:footerDividersEnabled="true"
+            android:visibility="gone"></ListView>
+</RelativeLayout>
+
+</LinearLayout>

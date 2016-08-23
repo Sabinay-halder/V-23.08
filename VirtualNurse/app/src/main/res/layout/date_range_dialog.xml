@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:padding="10dp" >
+
+    <com.widevision.pillreminder.model.CustomTextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date Range"
+        android:textColor="#003555"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_size_medium" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/blue"></View>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/from_layout"
+    android:weightSum="5">
+    <com.widevision.pillreminder.model.CustomTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_medium"
+        android:padding="10dp"
+        android:layout_weight="2"
+        android:text="From"/>
+    <com.widevision.pillreminder.model.CustomTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/from_select"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_medium"
+        android:padding="10dp"
+        android:layout_weight="3"
+        android:layout_gravity="right"
+        android:singleLine="true"
+        android:gravity="right"
+        android:text="Select"/>
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/to_layout"
+        android:weightSum="5">
+        <com.widevision.pillreminder.model.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"
+            android:padding="10dp"
+            android:layout_weight="2"
+            android:text="To"/>
+        <com.widevision.pillreminder.model.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/to_select"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"
+            android:padding="10dp"
+            android:layout_weight="3"
+            android:layout_gravity="right"
+            android:singleLine="true"
+            android:gravity="right"
+            android:text="Select"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+

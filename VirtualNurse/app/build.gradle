@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.widevision.pillreminder"
+        minSdkVersion 16
+
+        versionCode 17
+        versionName "2.6"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/notice.txt'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile files('libs/joda-time-2.0.jar')
+    compile 'com.android.support:support-v4:22.1.1'
+    /*this is for material design edit text*/
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    /*this lib for findView in activity */
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.kyleduo.switchbutton:library:1.2.9'
+    compile files('libs/ActiveAndroid.jar')
+    compile 'com.squareup:android-times-square:1.5.0@aar'
+    compile 'me.leolin:ShortcutBadger:1.1.3@aar'
+    compile 'com.balysv:material-ripple:1.0.2'
+    compile 'com.android.support:cardview-v7:22.0.0'
+    compile files('libs/activation.jar')
+    compile files('libs/additionnal.jar')
+    compile files('libs/mail.jar')
+}

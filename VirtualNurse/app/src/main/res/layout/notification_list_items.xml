@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listShowImageView" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent"
+            android:id="@+id/notiShowImageViewTrans"
+
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:padding="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp">
+
+
+
+                <com.widevision.pillreminder.model.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listNotDrugTextView"
+                    android:textSize="15sp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text="Drug name" />
+
+
+
+                <com.widevision.pillreminder.model.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:layout_toLeftOf="@+id/listDosageTime"
+                    android:gravity="right"
+                    android:textSize="13sp"
+                    android:id="@+id/listDateTextView"
+                    android:textColor="@color/black" />
+
+
+
+
+                <com.widevision.pillreminder.model.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="5dp"
+                    android:textSize="13sp"
+                    android:layout_gravity="right"
+                    android:id="@+id/listDosageTime"
+                    android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <com.widevision.pillreminder.model.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listNotDosageTextView"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:textColor="@color/red"
+                android:text="Dosage" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listTakenTextView"
+                    android:background="@drawable/takennot" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listSkipTextView"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center"
+                    android:background="@drawable/skipnot" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listSnoozeTextView"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/snoozenot"
+                    android:visibility="gone"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listSnoozedTextView"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/snoozed"
+                />
+
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

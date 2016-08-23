@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <com.widevision.pillreminder.model.CustomTextViewBold
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#003555"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_size_medium" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/blue"></View>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_vertical"
+       android:layout_marginTop="5dp"
+       android:padding="10dp"
+       android:id="@+id/duration_layout"
+       android:gravity="center"
+       android:orientation="horizontal">
+       <com.widevision.pillreminder.model.CustomTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/btn_plus"
+           android:textSize="50sp"
+           android:gravity="right|center"
+           android:padding="10dp"
+           android:paddingRight="5dp"
+           android:layout_gravity="center_vertical"
+           android:textColor="@color/drugs_color"
+           android:layout_marginRight="5dp"
+           android:text="+"
+           />
+    <com.widevision.pillreminder.model.CustomEditText
+        android:id="@+id/editTextDialogUserInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:inputType="number">
+        <requestFocus />
+           </com.widevision.pillreminder.model.CustomEditText>
+       <com.widevision.pillreminder.model.CustomTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp"
+           android:padding="10dp"
+           android:textSize="20dp"
+           android:textColor="@color/black"
+           android:text="Day(s)"/>
+
+       <com.widevision.pillreminder.model.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_minus"
+           android:textSize="50sp"
+           android:padding="10dp"
+           android:textColor="@color/drugs_color"
+           android:layout_marginLeft="2dp"
+            android:text="-"/>
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/blue"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/line_down"
+        android:visibility="gone"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/lifetime_layout"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/lifetime_img"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_1"/>
+        <com.widevision.pillreminder.model.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lifetime"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            />
+
+        </LinearLayout>
+</LinearLayout>

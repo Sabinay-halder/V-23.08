@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noitShowImageView" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notiShowImageViewTrans"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noti_title"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/noitShowImageView"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:text="Medicine time"
+        android:layout_marginBottom="2dp"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noti_title"
+        android:layout_toRightOf="@+id/noitShowImageView"
+        android:id="@+id/texttaken"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/refill_now"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noti_title"
+        android:layout_toRightOf="@+id/texttaken"
+        android:padding="5dp"
+        android:id="@+id/textsnooze"
+        android:gravity="center"
+        android:background="@drawable/later"
+        />
+</RelativeLayout>
+
+

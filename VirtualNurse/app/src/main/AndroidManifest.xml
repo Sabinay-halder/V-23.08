@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.widevision.pillreminder" >
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" ></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" ></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" ></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" ></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:name="com.widevision.pillreminder.activity.VirtualNurse"
+        android:installLocation="preferExternal"
+        android:theme="@style/AppTheme" >
+
+
+        <!-- Notice this tag which provides the database name -->
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="virtualNurse.db" />
+        <!-- Notice this tag which provides the database version -->
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="4" />
+
+        <activity
+            android:name="com.widevision.pillreminder.util.SplashScreen"
+            android:screenOrientation="sensorPortrait"
+            android:label="@string/app_name" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.widevision.pillreminder.activity.TabCreator"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            ></activity>
+
+        <activity
+            android:name="com.widevision.pillreminder.activity.DrugsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+
+        <activity
+            android:name="com.widevision.pillreminder.activity.PasswordActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+
+        <activity
+            android:name="com.widevision.pillreminder.activity.AddDrugsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+
+
+        <activity
+            android:name="com.widevision.pillreminder.activity.HistoryActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+
+        <activity
+            android:name="com.widevision.pillreminder.activity.EditDrugActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+
+        <activity
+            android:name="com.widevision.pillreminder.activity.SettingActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+        <activity
+            android:name="com.widevision.pillreminder.activity.NotificationActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+
+        <activity
+            android:name="com.widevision.pillreminder.activity.TransperentActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+        <activity
+            android:name="com.widevision.pillreminder.activity.TranseperentCameraActiviy"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+
+        <activity
+            android:name="com.widevision.pillreminder.activity.TabDrug"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+
+        <activity
+            android:name="com.widevision.pillreminder.activity.TabHistory"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+
+        <activity
+            android:name="com.widevision.pillreminder.activity.TabSetting"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+
+        <activity
+            android:name="com.widevision.pillreminder.activity.TabGroupActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+        <activity
+            android:name="com.widevision.pillreminder.activity.SubscriptionActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+        <activity
+            android:name="com.widevision.pillreminder.activity.TabSubscription"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+
+
+        <service android:name="com.widevision.pillreminder.activity.AlarmService" />
+        <receiver
+            android:name="com.widevision.pillreminder.activity.AlarmReciever"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE"/>
+
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp" >
+
+    <com.widevision.pillreminder.model.CustomTextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:padding="5dp"
+       >
+
+        <com.widevision.pillreminder.model.CustomButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+
+            android:id="@+id/btn_confirm_delete"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/yes_button"
+            android:textColor="@color/white"
+
+            />
+
+        <com.widevision.pillreminder.model.CustomButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+
+            android:layout_marginLeft="5dp"
+            android:id="@+id/btn_cancel_delete"
+            android:background="@drawable/yes_button"
+            android:textColor="@color/white"
+
+            />
+
+
+
+    </LinearLayout>
+</LinearLayout>

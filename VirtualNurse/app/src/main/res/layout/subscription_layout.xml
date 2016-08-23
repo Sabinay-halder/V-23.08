@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+  android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="#7745c2"
+        android:gravity="center_vertical">
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true"
+            android:layout_marginTop="5dp"
+            app:mrl_rippleRoundedCorners="15dp"
+            android:background="@drawable/back"
+            android:layout_marginLeft="10dp"
+            android:visibility="invisible"
+            >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel_notification"
+            />
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <com.widevision.pillreminder.model.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subscription"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/reminder_text" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:id="@+id/layout_free"
+        android:background="@color/white"
+        android:weightSum="5">
+    <com.widevision.pillreminder.model.CustomTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_medium"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_weight="4.8"
+        android:text="Free User(You can add only 2 Drugs)"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:id="@+id/free"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_gravity="center"
+        android:button="@drawable/selector_row"
+        android:paddingTop="5dp"
+        android:id="@+id/check_free"
+         />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@color/white"
+        android:weightSum="5">
+    <com.widevision.pillreminder.model.CustomTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="One Month ($ 0.99) "
+        android:textSize="@dimen/text_size_medium"
+        android:layout_weight="4.8"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/onemonth"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:button="@drawable/selector_row"
+            android:paddingTop="5dp"
+
+            android:id="@+id/check_one_month"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@color/white"
+        android:weightSum="5">
+    <com.widevision.pillreminder.model.CustomTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Six Months ($ 4.99)"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_medium"
+        android:layout_weight="4.8"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/sixmonth"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_gravity="center"
+            android:gravity="right"
+            android:button="@drawable/selector_row"
+            android:paddingTop="5dp"
+
+            android:id="@+id/check_six_month"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@color/white"
+        android:weightSum="5">
+    <com.widevision.pillreminder.model.CustomTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="One Year ($ 7.99)"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_size_medium"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_weight="4.8"
+
+        android:id="@+id/year"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:gravity="right"
+            android:layout_gravity="center"
+            android:button="@drawable/selector_row"
+            android:paddingTop="5dp"
+
+            android:id="@+id/check_year"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:background="@drawable/subscribe_new"
+        android:layout_marginTop="10dp"
+        android:id="@+id/subscribeNowBtn"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Virtual Nurse</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+     <string name="No_reminder">"No reminder Add one with the + button"</string>
+    <string name="Base64EncodedString">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj/4RI59Fh+t++8aenWphG/+GttQ1zdlhmDzvCaAvpkYN6vjexn5S8tTsm9gQ8Uc+9n/tfJavRisSCJ+qEWHjHiWXzdNIZ4O0iDB2ZrD+hZ8ieeXOa+HylIdYVOiJGga/bhy5w2wwUqUCrs5DvY4zehCmzg0mhZWF1q8ufN7QMr3YY+4oxZ9cbNq+R+MYw2UK8J0s3kFZgvZoJbPLJHq/V5YWbyDfQddCeVGIoIb3N5rry7asGGnu1TDz2GHKof8YEQKJSsbU6SR1JZAmx+F5LR2TTVCo2z9Xio+HXKck8qAaqeQKSBoFuQ5bK0T36K2G6dTSmLVBFOljCA1iOCL3fwIDAQAB</string>
+    <string name="ok">OK</string>
+    <!--walkThrough content-->
+    <!--Add Drug-->
+    <string name="drug_name">Enter Drug Name here.</string>
+    <string name="drug_form">Click here to set Drug form.</string>
+    <string name="rx_num">Enter RX Number of Drug here.</string>
+    <string name="docter_name">Enter Doctor Name here.</string>
+    <string name="pharmacy_name">Enter Pharmacy Name here.</string>
+    <string name="camera_btn">Click here to Capture drug Image.</string>
+    <string name="drugNotification">Click here to enable or disable notification.</string>
+    <string name="food_instruction">Click here to add food instructions for Drug.</string>
+    <string name="save_drug">Click here to save Drug.</string>
+    <!--Add Reminder-->
+    <string name="reminder_drug_name">Click here to select the Drug for Reminder.</string>
+    <string name="reminder_schedule">Click here to set reminder schedule.</string>
+    <string name="reminder_add_dosage_and_time">Click here to enter multiple dosage and time for drug Reminder.</string>
+    <string name="reminder_refill_text">Click here to set the Drug Refill Reminder.</string>
+
+    <string name="save_reminder">Click here to save Reminder.</string>
+    <string name="reminder_repeat_down">Select any day.</string>
+    <string name="list_add">Add Dosage and time.</string>
+
+</resources>

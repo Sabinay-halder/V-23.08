@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginLeft="10dp">
+
+    <com.widevision.pillreminder.model.CustomTextView
+        android:id="@+id/textView1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Your Selection "
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/blue"></View>
+    <com.widevision.pillreminder.model.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/five_minutes"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_medium"
+        android:padding="10dp"
+        android:text="5 minutes"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"></View>
+    <com.widevision.pillreminder.model.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fifteen_minutes"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_medium"
+        android:padding="10dp"
+        android:text="15 minutes"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"></View>
+    <com.widevision.pillreminder.model.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/thirty_minutes"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_medium"
+        android:padding="10dp"
+        android:text="30 minutes"/>
+
+</LinearLayout>

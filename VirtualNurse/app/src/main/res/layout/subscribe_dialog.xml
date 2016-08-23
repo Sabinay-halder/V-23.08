@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/close_dialog"
+        android:background="@drawable/close"
+        android:onClick="onClose"
+        android:layout_gravity="right"
+        />
+<com.widevision.pillreminder.model.CustomTextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="To add more Drugs please subscribe."
+    android:textSize="@dimen/text_size_medium"
+    android:textColor="@color/black"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    />
+    <com.widevision.pillreminder.model.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subscribe Now"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/blue"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/subscribe_btn"
+        />
+    <com.widevision.pillreminder.model.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/blue"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        />
+
+</LinearLayout>
